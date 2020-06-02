@@ -1,2 +1,2 @@
-# Happy-SE-in-XDU
+# Happy-SE-in-XDU软院学习没烦恼
 Specialized for XDU SE students.
