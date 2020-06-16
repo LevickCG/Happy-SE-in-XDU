@@ -2,7 +2,7 @@
 
 ### 程序运行时间
 
-![img](./img/OS_EXR_1.PNG)
+![img](./img/OS_EXR_1.png)
 
 Minimum time=5+5=10  (1CUP while 2 I/O, 2CPU while 1 I/O), maximum time=10+10，average time=13.33
 求解平均运行时间的时候需要用到CPU利用率， $ Average\ time=minimum\ time /CPU\ utilization$
@@ -10,7 +10,7 @@ $$ CPU\ utilization =1-q^n (n是程序个数，p是I/O占比) $$
 
 ###  虚拟内存物理内存地址关系
 
-![img](./img/OS_EXR_2.PNG)
+![img](./img/OS_EXR_2.png)
 
 （1）虚拟地址范围, $ page\ size = page\ frame\ size$, page frame: the corresponding units in physical memory（via，MOS）.进程中的块，称为页（page）,内存中的块称为页框（page frame或页帧，物理页）。
 
@@ -35,7 +35,7 @@ $$ CPU\ utilization =1-q^n (n是程序个数，p是I/O占比) $$
 
 ### Managing free memory
 
-![img](./img/OS_EXR_3.PNG)
+![img](./img/OS_EXR_3.png)
 
 
 
@@ -45,9 +45,9 @@ $$ CPU\ utilization =1-q^n (n是程序个数，p是I/O占比) $$
 
 ### scheduling 调度
 
-![img](./img/OS_EXR_5.PNG)
+![img](./img/OS_EXR_5.png)
 
-![img](./img/OS_EXR_6.PNG)
+![img](./img/OS_EXR_6.png)
 
 周转时间=作业完成时间-作业提交时间，平均周转时间=$ \frac{{\sum\limits_{\rm{1}}^n 作业i的周转时间 }}{n}$
 
@@ -63,7 +63,7 @@ $$ CPU\ utilization =1-q^n (n是程序个数，p是I/O占比) $$
 
 ### Deadlock
 
-![img](./imG/OS_EXR_7.PNG)
+![img](./imG/OS_EXR_7.png)
 (1) The current state is a safe state.
 
 | Process | Max need | Already have | Still nedd | Available |
