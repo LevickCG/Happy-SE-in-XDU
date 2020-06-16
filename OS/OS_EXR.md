@@ -25,7 +25,7 @@ $$ CPU\ utilization =1-q^n (n是程序个数，p是I/O占比) $$
 |      6       |  12288~14335  |
 |      7       |  14336~15359  |
 
-(2)<img src="C:\Users\爱学习的C小果\AppData\Roaming\Typora\typora-user-images\image-20200426103052746.png" alt="image-20200426103052746" style="zoom: 90%;" /> 在0，1，3，5范围内的均会发生缺页中断（page fault）
+(2)<img src="./img/unexp_1.png" style="zoom: 90%;" /> 在0，1，3，5范围内的均会发生缺页中断（page fault）
 
 (3)注意题目要求我们由虚拟地址求实际的物理地址。首先我们需要确定在哪一个虚拟页（virtual page），然后确定偏移量（offset），根据虚拟页和物理页的关系得出实际的物理地址。
 (i)8500=2048*4+308, 对应虚拟页4, offset 308，而虚拟页4对应物理页3，故实际物理地址为6144+308=6452
