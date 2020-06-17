@@ -73,7 +73,7 @@
 
 #### Process state
 
-![image-20200526223353316](C:\Users\爱学习的C小果\AppData\Roaming\Typora\typora-user-images\image-20200526223353316.png)
+![image-20200526223353316](./img/image-20200526223353316.png)
 
 > 对原书上图的解释（上图底部小图）
 >
@@ -95,7 +95,7 @@ This entry contains information about the process’ state, its **<u>program cou
 - A thread consist of ==program counter, register set, stack space.==
 - A thread share `code section,data section,OS resouces`
 
-![image-20200526225643844](C:\Users\爱学习的C小果\AppData\Roaming\Typora\typora-user-images\image-20200526225643844.png)
+![image-20200526225643844](./img/image-20200526225643844.png)
 
 <center>一个进程中线程的私有项和共享项</center>
 
@@ -121,33 +121,19 @@ This entry contains information about the process’ state, its **<u>program cou
 
 ### Scheduling
 
-```mermaid
-graph LR
-a(all systems)
-a-->fair[fairness: fair share of CPU]
-a-->policy[policy enforcement: make sure the policy carried out ]
-a-->balance[balance:keep the system busy]
-```
+![image-20200617081004572](./img/image-20200617081004572.png)
 
 #### Scheduling Algorithm
 
 理解性的内容，可参照PPT理解后看下面例题进行深度理解。
 
-```mermaid
-graph LR
-batch(batch system)-->FCFS[FCFS:easy to implement and understan but poor CPU ultilization]
-batch-->SJF[Shortest job first: may cause starvation--can be solved by 'aging']
-
-inter(interactive system)
-inter-->rr[Round robin: quantum]
-inter-->prio[priority]
-```
+![image-20200617081101526](./img/image-20200617081101526.png)
 
 #### example
 
-![img](http://qungz.photo.store.qq.com/qun-qungz/V522Ud9c2IOQLd0NYQQQ32BcGu1uiNZi/V5bCQA2MjA1NDk2MzS6s6NekkJwKQ!!/0)
+![](./img/0.png)
 
-<img src="C:\Users\爱学习的C小果\AppData\Roaming\Typora\typora-user-images\image-20200511175041371.png" alt="image-20200511175041371"  />
+<img src="./img/image-20200511175041371.png" alt="image-20200511175041371"  />
 
 周转时间=作业完成时间-作业提交时间，平均周转时间=$ \frac{{\sum\limits_{\rm{1}}^n 作业i的周转时间 }}{n}$
 
@@ -164,7 +150,7 @@ Note: SJF的平均周转时间是最短的，可以根据这一性质来完成
 
 #### Able to schedule or not
 
-![image-20200527110818504](C:\Users\爱学习的C小果\AppData\Roaming\Typora\typora-user-images\image-20200527110818504.png)
+![image-20200527110818504](./img/image-20200527110818504.png)
 
 ### Interprocess communication
 
@@ -188,7 +174,7 @@ Note: SJF的平均周转时间是最短的，可以根据这一性质来完成
 
 **What is `busy waiting`& `spin lock`?**
 
-![](C:\Users\爱学习的C小果\AppData\Roaming\Typora\typora-user-images\image-20200528175427961.png)
+![](./img/image-20200528175427961.png)
 
 **Various proposals for achieving mutual exclusion**
 
@@ -197,7 +183,7 @@ Note: SJF的平均周转时间是最短的，可以根据这一性质来完成
 - Strict Alternation       严格轮换法. 共享变量严格轮换，解决锁变量的问题；但是会出现快进程等待慢进程的情况，实际上相当于快进程被慢进程阻塞。（效率低下）
 - Peterson’s Solution    ` Peterson解法`.
 
-<img src="C:\Users\爱学习的C小果\AppData\Roaming\Typora\typora-user-images\image-20200530160246885.png" alt="image-20200530160246885" style="zoom:80%;" />
+<img src="./img/image-20200530160246885.png" alt="image-20200530160246885" style="zoom:80%;" />
 
 关键语句：`while (turn == process && interested[other] == TRUE)`
 
@@ -213,13 +199,13 @@ else, run your code.
 
 判断和上锁为原子操作（atomic operation），避免互斥
 
-![image-20200530164139768](C:\Users\爱学习的C小果\AppData\Roaming\Typora\typora-user-images\image-20200530164139768.png)
+![image-20200530164139768](./img/image-20200530164139768.png)
 
 #### Sleep and wakeup（avoid busy waiting）
 
 e.g. producer and consumer problem.因为有全局变量count无保护，可能出现死锁。
 
-<img src="C:\Users\爱学习的C小果\AppData\Roaming\Typora\typora-user-images\image-20200530174625878.png" alt="image-20200530174625878" style="zoom: 67%;" />
+<img src="./img/image-20200530174625878.png" alt="image-20200530174625878" style="zoom: 67%;" />
 
 #### Semaphore信号量
 
