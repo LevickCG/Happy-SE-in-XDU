@@ -63,7 +63,7 @@ $$ CPU\ utilization =1-q^n (n是程序个数，p是I/O占比) $$
 
 ### Deadlock
 
-![img](./imG/OS_EXR_7.png)
+![img](./img/OS_EXR_7.png)
 (1) The current state is a safe state.
 
 | Process | Max need | Already have | Still nedd | Available |
