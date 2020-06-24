@@ -61,9 +61,9 @@ $$ CPU\ utilization =1-q^n (n是程序个数，p是I/O占比) $$
 |   FCFS   |  5   |  12  |  17  |  20  |  24  |     15.6     |
 |   SJF    |  5   |  28  |  12  |  5   |  15  |      13      |
 
-### Deadlock
+### Deadlock死锁
 
-![img](./imG/OS_EXR_7.png)
+![img](./img/OS_EXR_7.png)
 (1) The current state is a safe state.
 
 | Process | Max need | Already have | Still nedd | Available |
@@ -87,3 +87,14 @@ P2->P3->P4->P1, Available:1101->1223->2524->2625->3835.
 
 P2(Available:1222), P3(Available:2523), P4(Available:2624), P1(Available:3835), Still safe.
 
+### Disk Arm Schelduling Algorithm 
+
+![image-20200624165420295](./img/image-20200624165420295.png)
+
+![image-20200624181127738](./img/image-20200624181127738.png)
+
+![image-20200624174229203](./img/image-20200624174229203.png)
+
+
+
+(3)同(2)
