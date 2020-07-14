@@ -120,3 +120,44 @@
 
 
 
+## 填空题
+
+### 5-1拷贝构造函数
+
+![image-20200714083037356](.\img\image-20200714083037356.png)
+
+答案如图，根据CAT的构造函数，我们很容易类似地写出它地拷贝构造函数。
+
+### 5-2多态
+
+![image-20200714083231314](.\img\image-20200714083231314.png)
+
+题目中，A为基类，B为派生类，B中对void f()进行了重载，由于A的void f（）为虚函数。基类A的引用调用虚函数，动态绑定。（其实第三个空结果可以为`p.`，输出一样，且这样更符合题目用意）
+
+```c++
+#include <iostream>
+
+using namespace std;
+
+class A{
+public:
+  virtual void f(){cout<<"A::f()"<<endl;}
+};
+
+class B:public A{
+public:
+  void f(){cout<<"B::f()"<<endl;}
+};
+
+int main()
+{
+  B b;
+  A &p=b;
+  p.f();
+	return 0;
+}
+
+  
+```
+
+### 5-3
