@@ -1,5 +1,7 @@
 # Summary of Modern Operating System
 
+知识点总结，可以用复习时检查完整度。
+
 ## Processes and Threads
 
 ### Processes
@@ -52,3 +54,71 @@
 >   - attacking four conditions for deadlock
 > - Starvation
 
+## Memory Management
+
+
+
+## Input and Output
+
+### I/O
+
+> - I/O device
+>
+>   - main function (send commands, catch interrupts, handle errors, provide an interface)
+>   - category: block device, character device 
+>   - device independence
+>
+> - I/O device components
+>
+>   - mechanical component
+>   - electronic component (control the device)
+>     - convert serial bit stream into a block of bytes
+>     - Perform error correction
+>     - copy data to main memory
+>   - registers and buffer
+>
+> - I/O and Memory
+>
+>   - separated I/O and memory space
+>   - memory-mapped I/O (important)
+>     - Advantages: written entirely in C; no special protection needed; simple instruction
+>     - disadvantages: 多数电脑有caching机制，control register数据内容不实时；
+>   - hybrid: memory-mapped I/O buffers, separate I/O ports for the control registers.
+>
+> - DMA (important)
+>
+>   <img src="./img/image-20200716194929366.png" alt="image-20200716194929366" style="zoom:60%;" />
+>
+> - interrupt
+>
+> - I/O software
+>
+>   - Goals: device independence, uniform naming, error handling, syn & asyn transfer, buffering, sharable & dedicated
+>
+> - Three ways to perform I/O (important, pay attention to pro&cons)
+>
+>   - programed I/O
+>   - interrupt-driven I/O
+>   - I/O using DMA
+>
+> - I/O software layers
+>
+>   ![image-20200716195242745](.\img\image-20200716195242745.png)
+
+### Disk
+
+> - Disks
+>   - category: optical disk, magnetic disk, SSD
+>   - component: cylinder, track, sector
+>   - RAID(Redundant Array of Independent Disk), 独立磁盘冗余阵列
+> - CD-ROM原理
+> - Disk Formatting
+>   - disk sector consists of preamble, data, ECC
+>   - cylinder skew
+>   - interleaving
+> - Disk Arm Scheduling Algorithm (important)
+>   - FCFS,  shortest seek first, the elevator algorithm
+>   - error handling
+> -  SSD
+> - Clock
+>   - traditional clock(low frequency), programmable clock (high frequency, flexible)
