@@ -3,6 +3,8 @@ Specialized for XDU SE students.
 
 本项目包括但不限于西电软件工程专业相关课程的`习题解析`、`知识点总结`及`其他学习资料`，供西电er们参考学习。
 
+注：本项目markdown文档均使用[typora](https://www.typora.io/)，为获得最好观看体验可以自行pull到本地查看。如在网页端查看请安装google浏览器插件[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=zh-CN)。
+
 ## 目前收录
 
 > - 大二下
