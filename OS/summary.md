@@ -56,7 +56,50 @@
 
 ## Memory Management
 
+### Basics
 
+> - properties of ideal memory: large, fast, non-vonlatile
+> - Memory hierarchy: cache, main memory, disk storage
+> - I/O and CPU utilization（考点之一）
+> - relocation and protection
+> - base limit regitster
+
+### Swapping
+
+> - What is swapping? What's the difference between swapping and virtual memory
+> - When will memory allocation change? (process comes in and leave the memory)
+> - memory management with bitmap & list
+> - algorithms used to allocate memory for newly created process
+>   - first fit, next fit, worst fit, best fit, quick fit.
+
+### virtual memory
+
+**The basic idea behind virtual memory is that the combined size of the program, data, and stack may exceed the amount of physical memory available for it.**
+
+**The operating system keeps those parts of the program currently in use in main memory, and the rest on the disk.**
+
+#### paging
+
+> - MMU
+> - How do we convert virtual address to physical memory address? (Usage of MMU)
+>
+> ![image-20200719112127886](.\img\image-20200719112127886.png)
+>
+> - What is page, page frame, page fault?
+>
+>   - The virtual address space is divided up into units called **pages**.
+>   - The corresponding units in the physical memory are called **page frames**.
+>   - When MMU notices that the page is unmapped  and causes the CPU to trap to the operating system. This trap is called a **page fault**
+>
+> - How is page table used ?
+>
+>   ![image-20200719112306987](.\img\image-20200719112306987.png)
+>
+> - Page table entry
+>
+>   ![image-20200728165055563](./img/image-20200728165055563.png)
+>
+> - 
 
 ## Input and Output
 
@@ -122,3 +165,10 @@
 > -  SSD
 > - Clock
 >   - traditional clock(low frequency), programmable clock (high frequency, flexible)
+
+## Short-answer questions
+
+> - ***What is TLB, what role does it play in memory management?***
+    - TLB is translation lookaside buffer, a small hardware device for mapping virtual addresses to physical addresses without going through the page table. It's usually inside the MMU and consists of a small number of  entries containing information about the page, like virtual page number, modification bit, protection bit, reference bit and so on.
+    - In memory management, it speeds up paging.
+
