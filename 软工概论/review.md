@@ -51,11 +51,50 @@ element of a system, interelated systems
 > - 商业环境中的质量
 >   - ROI （Return on Investment）投资回报
 
-## 中英文对照表
+## Chp2: Modeling the Process and Life Cycle
 
-一个单词或词组在不同语境下有多种含义，这里仅指出在软件工程概论课程中一些单词中文含义，仅供参考。
+### Process
 
-`synthesis`：整合，综合 （analysis and synthesis）
+`Definition: `
 
+> A set of ordered tasks
+> A series of steps involving activities, constraints, and resources that produce an intended output of some kind.
 
+`Software process`: 
+
+ A process defines who is doing what, when and how, in order to reach a certain goal.
+
+Sequence of development activities.
+
+` Life cycle`: 
+
+when the process involves the building of some product, we sometimes refer to the process as a life cycle.
+
+### Software process model
+
+`General process`: analysis---->design---->coding---->testing---->operation&maintenance
+
+#### Waterfall model
+
+requirement analysis--> system design --> program design --> coding --> unit&integration testing --> system testing --> acceptance testing --> operation&maintenance
+
+> - advantages
+>   - The waterfall model can be very useful in helping developers lay out what they need to do.
+>   - Its simplicity makes it easy to explain to customers who are not familiar with software development.
+>   - it makes explicit which intermediate products are neces­sary in order to begin the next stage of evelopment. <u>*(Text book P49, bottom paragraph)*</u>
+> - disadvantages
+>   - There is no insight into how each activity transform one artifact to another, such as requirements to design.
+>   -  Its failure to treat software as a problem-solving process. <u>*(PPT 17)*</u>
+
+**Waterfall model fitness**
+
+<img src="./img/image-20200723101525616.png" alt="image-20200723101525616" style="zoom:80%;" />
+
+#### V model
+
+Similar to waterfall model. But we use the later steps to vefiry or validate the correctness of the former steps.
+
+If there are problems, we can re-excute the form steps before the latter steps re-enact.
+
+![image-20200723101809439]( .\img\image-20200723101809439.png)
 
