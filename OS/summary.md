@@ -2,6 +2,8 @@
 
 知识点总结，可以用复习时检查完整度。
 
+基于高海昌老师PPT。
+
 ## Processes and Threads
 
 ### Processes
@@ -166,9 +168,35 @@
 > - Clock
 >   - traditional clock(low frequency), programmable clock (high frequency, flexible)
 
-## Short-answer questions
+## Essay questions
 
 > - ***What is TLB, what role does it play in memory management?***
-    - TLB is translation lookaside buffer, a small hardware device for mapping virtual addresses to physical addresses without going through the page table. It's usually inside the MMU and consists of a small number of  entries containing information about the page, like virtual page number, modification bit, protection bit, reference bit and so on.
-    - In memory management, it speeds up paging.
+>   
+>   - TLB is translation lookaside buffer, a small hardware device for mapping virtual addresses to physical addresses without going through the page table. It's usually inside the MMU and consists of a small number of  entries containing information about the page, like virtual page number, modification bit, protection bit, reference bit and so on.
+>   - In memory management, it speeds up paging(mapping virtual addresses to physical addresses).
+> - What is system call? Use an example to illustrate the steps of system call.
+>
+>   - System call is an interface between a process and operating system to allow user-level processes to request kernel services from the operating system.
+>
+>   - Example: the system call read(fd, buffer, nbytes).
+>
+>     1. Push the parameters onto the stack. (In the order of nbytes, &buffer, fd).
+>     2. The actual call to library procedure comes.
+>     3. Library procedure put the system-call number in the register.
+>     4. ***Execute a TRAP instruction to switch from user mode to kernel mode and start execution within the kernel.***
+>     5. Examine the system-call number and dispatch to the correct system-call handler.
+>     6. System-call handler runs.
+>     7. ***Control return to user-space library procedure following the TRAP instruction.***
+>     8. Procedure returns to the user program like usual procedure calls.
+>     9. Clean up the stack and increment SP(Stack pointer).     
+> - What is monitor? Can you use monitor to implement a data structure?
+>   - **A monitor** is a collection of procedures, variables, and data structures that are all grouped together in a special kind of module or package. (via PPT chp2-2 slide27)
+>   - shown below
+>     <img src="./img/image-20200730162123912.png" alt="image-20200730162123912" style="zoom: 60%;" />
+> - Please describe the diagram of Process State.
+>   - <img src="./img/image-20200730170021724.png" alt="image-20200730170021724" style="zoom:67%;" />
+>   - 1.  occurs when the operating system discovers that a process cannot continue right now, such as process blocks for input.
+>     2. occurs when the scheduler decides that the running process has run long enough and picks another process.
+>     3. occurs when all other processes had their fair share and the scheduler picks this process
+>     4. occurs when the external event for which a process was waiting (such as the arrival of some input) happens.
 
