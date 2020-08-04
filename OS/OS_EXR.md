@@ -105,7 +105,7 @@ P2(Available:1222), P3(Available:2523), P4(Available:2624), P1(Available:3835), 
 2)FIFO
 3)Optimal
 
-<img src=".\img\image-20200627110938051.png" alt="image-20200627110938051" style="zoom:80%;" />
+![image-20200804214019388](./img/image-20200804214019388.png)
 
 
 
