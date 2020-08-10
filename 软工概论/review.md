@@ -98,3 +98,44 @@ If there are problems, we can re-excute the form steps before the latter steps r
 
 ![image-20200723101809439]( .\img\image-20200723101809439.png)
 
+`Validation` ensures that the system has implemented all of the requirements.
+
+`Verification` ensures that each function works correctly. 
+
+> features:
+>
+> unit&integration testing ------veriry -----> program design
+>
+> system testing -----validate---->system design
+>
+> acceptance testing----validate---->requirement analysis
+>
+> If problems are found during verification and validation, the left side of the V can be re-executed before testing on the right side is re-enacted.
+
+#### Spirial model
+
+![image-20200810154008782](.\img\image-20200810154008782.png)
+
+characteristics:
+
+> - combines development activities with risk management to control and minimize risks.
+> - It's presented as a spiral in which each iteration represented by a circuit around four main phases
+>   - plan
+>   - determine goals, alternatives and constraints.
+>   - evaluate alternatives and risks.
+>   - develop and test.
+
+#### Prototype model 
+
+![image-20200810154446109](.\img\image-20200810154446109.png)
+
+characteristics:
+
+> - allows repeated investigation of the requirements and design.
+> - reduced risks and uncetainty in the development.
+
+### Phased Development - Increments and Iterations
+
+> - Incremental development: starts with small functional subsystem and adds functionality with each new release
+>   – Divide project into builds
+> -  Iterative development: starts with full system, then changes functionality of each subsystem with each new release
