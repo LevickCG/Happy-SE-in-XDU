@@ -168,35 +168,75 @@
 > - Clock
 >   - traditional clock(low frequency), programmable clock (high frequency, flexible)
 
-## Essay questions
+## Essay questions prediction
 
-> - ***What is TLB, what role does it play in memory management?***
+> - ***What is TLB, what role does it play in memory management?*** （往年题）
 >   
 >   - TLB is translation lookaside buffer, a small hardware device for mapping virtual addresses to physical addresses without going through the page table. It's usually inside the MMU and consists of a small number of  entries containing information about the page, like virtual page number, modification bit, protection bit, reference bit and so on.
 >   - In memory management, it speeds up paging(mapping virtual addresses to physical addresses).
-> - What is system call? Use an example to illustrate the steps of system call.
+>   
+> - What is system call? Use an example to illustrate the steps of system call. （往年题）
 >
 >   - System call is an interface between a process and operating system to allow user-level processes to request kernel services from the operating system.
 >
 >   - Example: the system call read(fd, buffer, nbytes).
 >
 >     1. Push the parameters onto the stack. (In the order of nbytes, &buffer, fd).
->     2. The actual call to library procedure comes.
+>     2. Call library procedure.
 >     3. Library procedure put the system-call number in the register.
->     4. ***Execute a TRAP instruction to switch from user mode to kernel mode and start execution within the kernel.***
->     5. Examine the system-call number and dispatch to the correct system-call handler.
+>     4. ***Execute a TRAP instruction to switch from user mode to kernel mode (and start execution within the kernel).***
+>     5. (Examine the system-call number and) dispatch to the correct system-call handler.
 >     6. System-call handler runs.
->     7. ***Control return to user-space library procedure following the TRAP instruction.***
+>     7. ***Control return to user-space library procedure (following the TRAP instruction).***
 >     8. Procedure returns to the user program like usual procedure calls.
 >     9. Clean up the stack and increment SP(Stack pointer).     
-> - What is monitor? Can you use monitor to implement a data structure?
+>   
+> - What is monitor? Can you use monitor to implement a data structure? （往年题）
+>
 >   - **A monitor** is a collection of procedures, variables, and data structures that are all grouped together in a special kind of module or package. (via PPT chp2-2 slide27)
 >   - shown below
 >     <img src="./img/image-20200730162123912.png" alt="image-20200730162123912" style="zoom: 60%;" />
-> - Please describe the diagram of Process State.
+>
+> - Please describe the diagram of Process State.（往年题）
+>
 >   - <img src="./img/image-20200730170021724.png" alt="image-20200730170021724" style="zoom:67%;" />
+>
+>   - Running (actually using the CPU at that instant).
+>
+>     Ready (runnable; temporarily stopped to let another process run).
+>
+>     Blocked (unable to run until some external event happens).
+>
 >   - 1.  occurs when the operating system discovers that a process cannot continue right now, such as process blocks for input.
 >     2. occurs when the scheduler decides that the running process has run long enough and picks another process.
 >     3. occurs when all other processes had their fair share and the scheduler picks this process
->     4. occurs when the external event for which a process was waiting (such as the arrival of some input) happens.
+>     4. occurs when the external event for which a process was waiting (such as the arrival of  
+>   
+> - The difference of Programmed I/O and Interrupt-driven I/O? （往年题）
+>
+>   - In programmed I/O, CPU does all the work, it continuesly polls the status register of the device during the whole I/O (Polling) .
+>   - In interrupt-driven I/O, it allows CPU to do something else while waiting for the device is not ready for I/O. If the device is ready for I/O, an interrupt is generated to block the current running process and CPU switches back to I/O.
+>
+> - What the function of the operating system?
+>
+>   Two main functions of the operating : providing abstractions to user programs and managing the computer's 
+>
+>   both hardware and software resources.
+>
+> - What is process, what is thread,  what the difference between them?
+>
+>   - a process is an executing program, including the current value of the program counter, register and variables.
+>   - a thread (or a light-weighted process) is the basic unit of CPU utilization consists of program counter, register set and stack space.
+>   - difference:
+>     - 调度方面。在引入线程的操作系统中，线程是独立调度的基本单位，进程是拥有资源的基本单位。
+>     - 系统开销方面。由于创建或撤销进程时，系统都要为之分配或回收资源，如内存空间、I/O设备等很大，而线程切换只需要保存和设置少量寄存器内容，开销很小。
+>     - 地址空间和其他资源方面。不同进程的地址空间之间互相独立，而同一进程的各线程间共享进程的资源。
+>     - 通信方面。IPC需要进程同步和互斥来保持数据一致性，而线程间可以直接读/写进程数据段来进行通信。
+>
+> - On all current computers, at least part of the interrupt handlers are written in assembly language. Why?(原书课后题)
+>
+>   ​		Generally, high-level languages do not allow the kind of access to CPU hard-ware that is required. For instance, an interrupt handler may be required to enable and disable the interrupt servicing a particular device, or to manipulate data within a process’ stack area. Also, interrupt service routines must execute
+>   as rapidly as possible. （原书参考答案）
+>
+>   
 
