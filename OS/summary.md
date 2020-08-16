@@ -227,7 +227,7 @@
 >
 >   - a process is an executing program, including the current value of the program counter, register and variables.
 >   - a thread (or a light-weighted process) is the basic unit of CPU utilization consists of program counter, register set and stack space.
->   - difference:
+>   - difference:（from 王道操作系统）
 >     - 调度方面。在引入线程的操作系统中，线程是独立调度的基本单位，进程是拥有资源的基本单位。
 >     - 系统开销方面。由于创建或撤销进程时，系统都要为之分配或回收资源，如内存空间、I/O设备等很大，而线程切换只需要保存和设置少量寄存器内容，开销很小。
 >     - 地址空间和其他资源方面。不同进程的地址空间之间互相独立，而同一进程的各线程间共享进程的资源。
