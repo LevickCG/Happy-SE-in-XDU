@@ -22,13 +22,15 @@ security包括哪些方面
 
 process状态有哪些
 
-spin lock use ?
+spin lock use \__?
 
 process定义
 
 TLB 是什么（翻译过来就行）
 
+shared library is also called\__?
 
+Thread is also call \__ process.
 
 ## Part III
 
