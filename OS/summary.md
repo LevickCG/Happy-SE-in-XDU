@@ -12,7 +12,8 @@
 >   - What is process? consist of ?
 > - process creation
 >   - four events that cause process creation
->   - resource sharing(3 cases), execution(concurrently or not), address space
+>   - parent and children
+>     - resource sharing(3 cases), execution(concurrently or not), address space
 > - process termination
 >   - four conditions that terminate process
 >   - In what situation parent may terminate child processes.
@@ -210,7 +211,7 @@
 >   - 1.  occurs when the operating system discovers that a process cannot continue right now, such as process blocks for input.
 >     2. occurs when the scheduler decides that the running process has run long enough and picks another process.
 >     3. occurs when all other processes had their fair share and the scheduler picks this process
->     4. occurs when the external event for which a process was waiting (such as the arrival of  
+>     4. occurs when the external event for which a process was waiting (such as the arrival of  input)
 >   
 > - The difference of Programmed I/O and Interrupt-driven I/O? （往年题）
 >
@@ -219,24 +220,22 @@
 >
 > - What the function of the operating system?
 >
->   Two main functions of the operating : providing abstractions to user programs and managing the computer's 
->
->   both hardware and software resources.
+>   Two main functions of the operating : providing abstractions to user programs and managing the computer's both hardware and software resources.
 >
 > - What is process, what is thread,  what the difference between them?
 >
 >   - a process is an executing program, including the current value of the program counter, register and variables.
->   - a thread (or a light-weighted process) is the basic unit of CPU utilization consists of program counter, register set and stack space.
+>  - a thread (or a light-weighted process) is the basic unit of CPU utilization consists of program counter, register set and stack space.
 >   - difference:（from 王道操作系统）
 >     - 调度方面。在引入线程的操作系统中，线程是独立调度的基本单位，进程是拥有资源的基本单位。
 >     - 系统开销方面。由于创建或撤销进程时，系统都要为之分配或回收资源，如内存空间、I/O设备等很大，而线程切换只需要保存和设置少量寄存器内容，开销很小。
 >     - 地址空间和其他资源方面。不同进程的地址空间之间互相独立，而同一进程的各线程间共享进程的资源。
 >     - 通信方面。IPC需要进程同步和互斥来保持数据一致性，而线程间可以直接读/写进程数据段来进行通信。
->
+> 
 > - On all current computers, at least part of the interrupt handlers are written in assembly language. Why?(原书课后题)
 >
 >   ​		Generally, high-level languages do not allow the kind of access to CPU hard-ware that is required. For instance, an interrupt handler may be required to enable and disable the interrupt servicing a particular device, or to manipulate data within a process’ stack area. Also, interrupt service routines must execute
->   as rapidly as possible. （原书参考答案）
->
+>  as rapidly as possible. （原书参考答案）
+> 
 >   
 
