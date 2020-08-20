@@ -3,7 +3,11 @@ Specialized for XDU SE students.
 
 本项目包括但不限于西电软件工程专业相关课程的`习题解析`、`知识点总结`及`其他学习资料`，供西电er们参考学习。
 
-注：本项目markdown文档均使用[typora](https://www.typora.io/)，为获得最好观看体验可以自行pull到本地查看。如在网页端查看请安装google浏览器插件[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=zh-CN)。
+注：本项目markdown文档均使用[typora](https://www.typora.io/)，为获得最好观看体验可以自行pull到本地查看。由于一些文章含有Latex公式，如在网页端查看请安装google浏览器插件[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=zh-CN)。
+
+## 贡献
+
+如果发现有关科目内容错误或想对此项目内容贡献自己的一份力量，欢迎通过levick-cheng@foxmail.com与我联系（主题备注HSIXDU）。
 
 ## 目前收录
 
@@ -14,7 +18,7 @@ Specialized for XDU SE students.
 >   - 软工概论
 >   - 数电
 
-
+部分资料含有相关习题答案，仅供参考，严谨抄袭。
 
 ## 附：西安电子科技大学本科生考试纪律与学术规范条例
 
