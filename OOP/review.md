@@ -68,6 +68,24 @@ class DC:public BC{
 };
 ```
 
+```c++
+class BC{
+protected
+    void set_x(int);
+};
+
+class DC:public BC{
+public:
+    void f(){set_x(66);}
+};
+void f(){
+    BC c1;
+    c1.set_x(77);//类外不可调用父类protected成员
+}
+```
+
+
+
 ### 运算符重载(operator overloading)
 
 ```c++
@@ -126,4 +144,49 @@ void main(){
 }
 ```
 
-To be continued...
+### const变量
+
+```c++
+int* f(const int y){
+    int temp=3;
+    temp+=++y;//y为const整形变量，其值不可直接改变。
+    return &temp;
+}
+```
+
+### this指针
+
+```c++
+class S{
+    //...
+    friend int operator[](s,int);//重载成员函数时，this指针默认绑定到左侧运算对象
+    							 //---->firend int operator[](int);即可
+    int operator!(int);
+    //...
+};
+```
+
+
+
+### 函数重载
+
+```c++
+class BC{
+public:
+    virtual void f(){/*...*/}
+    //...
+};
+class DC:public BC{
+	//...
+    void f(int x){/*...*/}
+};
+void f(){
+    DC d;
+    d.f();//此处候选函数(candidate function)只有void f(int x)，无可行函数(viabal funtion)
+    	  //DC已经重载f()，此时 BC的f()对ｄ不可见
+}
+```
+
+
+
+2020.9.1 update. To be continued...	
