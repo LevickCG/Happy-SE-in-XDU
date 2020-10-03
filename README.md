@@ -13,14 +13,17 @@ Specialized for XDU SE students.
 
 
 
-## 目前收录
+## 目前包含
 
 > - 大二下
->   - 计组
+>   - 计组I
 >   - OS
 >   - OOP
 >   - 软工概论
 >   - 数电
+> - 大三上
+>   - 计组II
+>   - database
 
 部分资料含有相关习题答案，仅供参考，严谨抄袭。
 
