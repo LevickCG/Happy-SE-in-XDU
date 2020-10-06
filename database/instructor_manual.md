@@ -16,7 +16,7 @@
 
 Given the above relation, and our university schema, write each of the following queries in SQL. You can assume for simplicity that no takes tuple has the null value for grade.
 
-![image-20200911091747096](D:/大三上课程/database/assignment/img/image-20200911091747096.png)
+![image-20200911091747096](./img/image-20200911091747096.png)
 
 
 
@@ -242,7 +242,7 @@ where assets_total> some (select assets_total
 
 ### 6.1
 
-![image-20200911091747096](D:\大三上课程\database\assignment\img\image-20200911091747096.png)
+![image-20200911091747096](./img/image-20200911091747096.png)
 
 6.1
 
@@ -286,7 +286,7 @@ g. Find the sections that had the maximum enrollment in Autumn 2009.
 
 6.2 Consider the relational database of Figure 6.22, where the primary keys are underlined. Give an expression in the relational algebra to express each of the following queries:
 
-![image-20200911202102094](D:\大三上课程\database\assignment\img\image-20200911202102094.png)
+![image-20200911202102094](./img/image-20200911202102094.png)
 
 ***<u>a. Find the names of all employees who live in the same city and on the same street as do their managers.(与经理同城同街的员工姓名)</u>*** 这题有点难。
 
@@ -298,7 +298,7 @@ g. Find the sections that had the maximum enrollment in Autumn 2009.
 
 第一种写法为`theta join`，可以将选择和笛卡尔积整合成一次运算。
 
-![image-20200917174003512](D:/大三上课程/database/assignment/img/image-20200917174003512.png)
+![image-20200917174003512](./img/image-20200917174003512.png)
 
 b. Find the names of all employees in this database who do not work for “First Bank Corporation”.
 
