@@ -30,7 +30,7 @@
 
 6．下图所示的调制方式是`________`，若载波频率为2400Hz，则码元速率为`________`。
 
-![img](C:\Users\Levick\source\github\HSIXDU\networking\img\clip_image002.gif)
+![img](./img/clip_image002.gif)
 
 > DPSK
 >
@@ -56,7 +56,7 @@
 
 ● 下图表示了某个数据的两种编码，这两种编码分别是 （1）`________`，该数据是 （2）`________`。
 
-![img](C:\Users\Levick\source\github\HSIXDU\networking\img\clip_image004.gif)
+![img](./img/clip_image004.gif)
 
  
 
@@ -134,7 +134,7 @@ D. 曼彻斯特编码效率高
 
 ● 下图所示是一种 （8）`________`调制方式。
 
-![img](C:\Users\Levick\source\github\HSIXDU\networking\img\clip_image006.gif)
+![img](./img/clip_image006.gif)
 
 （8）A. ASK       B. FSK         C. PSK         D. DPSK
 
