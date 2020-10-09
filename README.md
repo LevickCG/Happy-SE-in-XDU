@@ -17,13 +17,14 @@ Specialized for XDU SE students.
 
 > - 大二下
 >   - 计组I
->   - OS
->   - OOP
+>   - OS（操作系统）
+>   - OOP（面向对象程序设计）
 >   - 软工概论
 >   - 数电
 > - 大三上
 >   - 计组II
->   - database
+>   - database（数据库系统概念）
+>   - networking(计算机网络)
 
 部分资料含有相关习题答案，仅供参考，严谨抄袭。
 
