@@ -1,14 +1,8 @@
-# Database instructor‘s manual
+## Instructor’s manual
 
-## Chapter 2 Introduction to Relational Algebra
+> 本文包含部分老师课后题答案。
 
-### 2.7, 2.8,2.12,2.13
-
-![img](./img/A`7QO]J93GHMBRE5~YU_YTS.png)
-
-## Chapter 3 Introduction to SQL
-
-### 3.2
+![image-20201230124252736](C:\Users\Levick\source\github\HSIXDU\database\img\image-20201230124252736.png)
 
 3.2 Suppose you are given a relation ***grade_points(grade, points)***(**<u>根据此relation来将等级成绩转换成数据成绩</u>**), which provides a conversion from letter grades in the takes relation to numeric scores; for example an “A” grade could be specified to correspond to 4 points, an “A-” to 3.7 points, a “B+” to 3.3 points, a “B” to 3 points, and so on. **<u>The grade points earned by a student for a course offering (section) is defined as the number of credits for the course multiplied by the numeric points for the grade that the student received.</u>**
 
@@ -49,8 +43,6 @@ group by ID
  ```
 
 
-
-### 3.9
 
 3.9 Consider the employee database of Figure 3.20, where the primary keys are underlined. Give an expression in SQL for each of the following queries.
 
@@ -172,8 +164,6 @@ where avg_salary >(select avg_salary
 
  
 
-### 3.15
-
 3.15 Consider the bank database of Figure 3.19, where the primary keys are underlined. Construct the following SQL queries for this relational database.
 
 *branch*(<u>*branch name*</u>, *branch_city, assets*)
@@ -238,11 +228,8 @@ where assets_total> some (select assets_total
        
 ```
 
-## Chapter 6 Formal Relational Query Language	
 
-### 6.1
-
-![image-20200911091747096](./img/image-20200911091747096.png)
+### ![image-20200911091747096](./img/image-20200911091747096.png)
 
 6.1
 
@@ -282,7 +269,7 @@ g. Find the sections that had the maximum enrollment in Autumn 2009.
 
 > $\sigma_{count(ID)=\mathcal{G}_{max(count(ID))}(_{sec\_id\ }\mathcal{G}_{count(ID)}(\sigma_{year=2009\ \wedge\ semester=Autumn}(section \bowtie takes)))}(_{sec\_id\ }\mathcal{G}_{count(ID)}(\sigma_{year=2009\ \wedge\ semester=Autumn}(section \bowtie takes)))$
 
-### 6.2
+
 
 6.2 Consider the relational database of Figure 6.22, where the primary keys are underlined. Give an expression in the relational algebra to express each of the following queries:
 
