@@ -1,7 +1,7 @@
 # Happy-SE-in-XDU软院学习没烦恼
 Specialized for XDU SE students.
 
-本项目包括但不限于西电软件工程专业相关课程的`习题解析`、`知识点总结`及`其他学习资料`，供西电er们参考学习。
+本项目包括但不限于西电软件工程专业相关课程的`习题解析`、`知识点总结`及`其他学习资料`，供西电软工er们参考学习。
 
 注：本项目markdown文档均使用[typora](https://www.typora.io/)，为获得最好观看体验可以自行pull到本地查看。由于一些文章含有Latex公式，如在网页端查看请安装google浏览器插件[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=zh-CN)。
 
@@ -9,7 +9,7 @@ Specialized for XDU SE students.
 
 如果发现有关科目内容错误或想对此项目内容贡献自己的一份力量，欢迎通过levick-cheng@foxmail.com与我联系（主题备注HSIXDU）。
 
-感谢其他为此项目做出贡献的同学：[@luy-0](https://github.com/luy-0)
+感谢其他为此项目做出贡献的同学：[@luy-0](https://github.com/luy-0) [@Glonee](https://github.com/Glonee)
 
 
 
@@ -25,8 +25,12 @@ Specialized for XDU SE students.
 >   - 计组II
 >   - database（数据库系统概念）
 >   - networking(计算机网络)
+> - 大三下
+>   - machine_learning(机器学习与数据挖掘)
 
-部分资料含有相关习题答案，仅供参考，严谨抄袭。
+部分资料含有相关习题答案，仅供参考，若习题与成绩直接相关，请联系我予以删除。
+
+本仓库内资料主要是提供一些习题与考试总结，为同学们考试提供一个复习的方向。**但是我们需要学习的知识是一片海洋，考试所考的内容只是海洋里面的一瓢水。**希望学弟学妹们可以正确看待考试与日常学习，不要为了考试而考试，参加课程的主要目的是为了学到知识。
 
 ## 附：西安电子科技大学本科生考试纪律与学术规范条例
 
