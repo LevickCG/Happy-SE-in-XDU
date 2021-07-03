@@ -51,7 +51,7 @@ Thread is also call \__ process.
    {
        fork();
        printf("hello\n");
-       exelc("/bin/ls","ls",-1,0);
+       execl("/bin/ls","ls","-l",0);
        printf("hello\n");
    }
    ```
