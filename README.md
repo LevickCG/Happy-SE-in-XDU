@@ -7,7 +7,7 @@ Specialized for XDU SE students.
 
 ## 贡献
 
-如果发现有关科目内容错误或想对此项目内容贡献自己的一份力量，欢迎通过levick-cheng@foxmail.com与我联系（主题备注HSIXDU）。
+如果发现有关科目内容错误或想对此项目内容贡献自己的一份力量，可直接提pull request，也欢迎通过levick-cheng@foxmail.com与我联系（主题备注HSIXDU）。
 
 感谢其他为此项目做出贡献的同学：[@luy-0](https://github.com/luy-0) [@Glonee](https://github.com/Glonee)
 
@@ -27,6 +27,8 @@ Specialized for XDU SE students.
 >   - networking(计算机网络)
 > - 大三下
 >   - machine_learning(机器学习与数据挖掘)
+>   - SPM(Software Process Management软件项目管理)
+>   - Algorithm
 
 部分资料含有相关习题答案，仅供参考，若习题与成绩直接相关，请联系我予以删除。
 
