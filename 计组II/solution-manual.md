@@ -89,8 +89,8 @@ $TP=\dfrac{n}{T_{流水}}=38.9\ MIPS,\ S=\dfrac{T_{顺}}{T_{流水}}=1.944, E=\d
 ### 习题7.3
 PC/XT不需要奇偶分体(page230)，但8086需要奇偶分体。00000H~03FFFH共16k内存<br/>
 PC/XT:<br/>
-<img src="./img/7.3 1.jpg">
+<img src="./img/7.3 1.jpg" alt="7.3 1" >
 8086:<br/>
-<img src="./img/7.3 2.jpg">
+<img src="./img/7.3 2.jpg" alt="7.3 2" >
 
 
