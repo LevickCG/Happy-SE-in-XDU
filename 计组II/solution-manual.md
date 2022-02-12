@@ -105,7 +105,11 @@ B-4=7<br/>
 
 ### 习题7.7
 需要4片6264，下面两片6264的连接方式和上面的类似<br/>
-<img src="./img/7.7.JPG" alt="7.7" >
+<img src="./img/7.7.JPG" alt="7.7" ><br/>
+参考了以下内容(来自书本的232页)<br/>
+<img src="./img/7.7-page 232.jpg" alt="7.7-page232" ><br/>
+另一个解决方案，来自老师的ppt，注意这两个解决方案略有差别<br/>
+<img src="./img/7.7-1 .jpg" alt="7.7-1 " ><br/>
 
 ### 习题7.16
 1. 1111 110X XXXX XXXX XXXX，其中X表示A0到A12，故占用内存地址为FC000H--FDFFFH<br/>
