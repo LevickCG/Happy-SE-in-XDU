@@ -1,6 +1,6 @@
 # 计组II Solution Manual
 
-## 第六章
+## 第六章(By Levick Cheng)
 
 ### 习题6.5
 
@@ -31,6 +31,8 @@
 
 
 ### 思考：“细分瓶颈”和“重复瓶颈过程”的性能指标是否相同？
+
+（不知道学的时候又没有人想过这个问题，但是确实值得小小探讨一下，所以我就画了下图）
 
 ![bottleneck-solving](./img/bottleneck-solving.png)
 
@@ -74,9 +76,12 @@ $TP=\dfrac{n}{T_{流水}}=38.9\ MIPS,\ S=\dfrac{T_{顺}}{T_{流水}}=1.944, E=\d
 
 效率：$\dfrac{15\times \Delta t}{26\Delta t \times 6}=38.5\%$
 
-## 第七章
+~~我太懒了~~写得太累了。。画图好累。希望后继有人，把后面的补上。
+
+## 第七章(By ZCWzy)
 
 ### 习题7.2
+
 
 芯片资料连接: [21256_1](./img/21256_1.png), [21256_2](./img/21256_2.png), [2164](https://blog.csdn.net/xiong_xin/article/details/100636937), [6264]( [https://baike.baidu.com/item/Intel6264%E8%8A%AF%E7%89%87/5162001?fr=aladdin](https://baike.baidu.com/item/Intel6264芯片/5162001?fr=aladdin)), [62 256](https://wenku.baidu.com/view/45aaf0a8f78a6529647d53f1.html)<br/>
 
