@@ -9,7 +9,7 @@ Specialized for XDU SE students.
 
 如果发现有关科目内容错误或想对此项目内容贡献自己的一份力量，可直接提pull request，也欢迎通过levick-cheng@foxmail.com与我联系（主题备注HSIXDU）。
 
-感谢其他为此项目做出贡献的同学：[@luy-0](https://github.com/luy-0) [@Glonee](https://github.com/Glonee)
+感谢其他为此项目做出贡献的同学：[@luy-0](https://github.com/luy-0) [@Glonee](https://github.com/Glonee) [@ZCWzy](https://github.com/ZCWzy) 赵一晨
 
 
 
