@@ -32,3 +32,5 @@
 
 推荐但不会有人看的另一本教材Jeff的[Algorithm](https://jeffe.cs.illinois.edu/teaching/algorithms/book/Algorithms-JeffE.pdf)
 
+2022复习ppt:[Review-抗揍云](https://wwm.lanzouw.com/ivYY306erfcf)密码:hrz9
+
