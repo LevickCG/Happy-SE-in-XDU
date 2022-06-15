@@ -26,9 +26,10 @@ Specialized for XDU SE students.
 >   - database（数据库系统概念）
 >   - networking(计算机网络)
 > - 大三下
->   - machine_learning(机器学习与数据挖掘)
->   - SPM(Software Process Management软件项目管理)
->   - Algorithm
+>   - machine_learning 机器学习与数据挖掘
+>   - SPM(Software Process Management) 软件项目管理
+>   - Algorithm 算法分析与设计
+>   - SA(Software Architecture) 软件体系架构
 
 部分资料含有相关习题答案，仅供参考，若习题与成绩直接相关，请联系我予以删除。
 
