@@ -9,7 +9,7 @@ Specialized for XDU SE students.
 
 如果发现有关科目内容错误或想对此项目内容贡献自己的一份力量，可直接提pull request，也欢迎通过levick-cheng@foxmail.com与我联系（主题备注HSIXDU）。
 
-感谢其他为此项目做出贡献的同学：[@luy-0](https://github.com/luy-0) [@Glonee](https://github.com/Glonee) [@ZCWzy](https://github.com/ZCWzy) 赵一晨
+感谢其他为此项目做出贡献的同学：[@luy-0](https://github.com/luy-0) [@Glonee](https://github.com/Glonee) [@ZCWzy](https://github.com/ZCWzy) 赵一晨 [@ALEX-YRDM](https://github.com/ALEX-YRDM)
 
 
 
@@ -30,6 +30,10 @@ Specialized for XDU SE students.
 >   - SPM(Software Process Management) 软件项目管理
 >   - Algorithm 算法分析与设计
 >   - SA(Software Architecture) 软件体系架构
+>
+> web 系统分析与设计
+>
+> web 构件与中间件技术
 
 部分资料含有相关习题答案，仅供参考，若习题与成绩直接相关，请联系我予以删除。
 
