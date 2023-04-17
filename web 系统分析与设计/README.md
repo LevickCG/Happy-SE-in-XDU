@@ -5,5 +5,5 @@
 ~~最好不要打印（因为一页根本写不了几个字）~~    
 
 ### 课程资源
-全套ppt：[系统分析与设计ppt](https://wwm.lanzouw.com/b03d3lesd "系统分析与设计ppt")    
+全套ppt：[系统分析与设计ppt](https://wwm.lanzouw.com/b03d3lesd "系统分析与设计ppt")     密码：7z72
 如果你不想听宋胜利讲课，可以看这个：[褚华-系统分析与设计](http://mooc1.chaoxing.com/course/222385839.html "褚华-系统分析与设计")    
