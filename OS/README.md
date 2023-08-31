@@ -6,3 +6,8 @@
 
 关于课设内容，老师给出的资料过于陈旧，这里引用小梦的[博客](https://moefactory.com/3041.moe)，内容十分详尽且具有时效性。
 
+(自2021级开始os课设难度加大，可参考新的博客)
+
+[操作系统课程设计 | Napleon](https://www.napleon.cn/2023/05/24/操作系统课程设计/)
+
+Contributed by napleon-liu
