@@ -68,6 +68,8 @@ $TP=\dfrac{n}{T_{流水}}=38.9\ MIPS,\ S=\dfrac{T_{顺}}{T_{流水}}=1.944, E=\d
 
 ![image-20201003170034544](./img/image-20201003170034544.png)
 
+(这个是静态流水线，因而在所有乘法执行完后才开始执行加法过程)
+
 设每段所用时间为$\Delta t$
 
 吞吐率：$TP=\dfrac{n}{T_{流水}}=\dfrac{15}{26\Delta t}$
@@ -118,7 +120,7 @@ B-4=7<br/>
 
 ### 习题7.16
 1. 1111 110X XXXX XXXX XXXX，其中X表示A0到A12，故占用内存地址为FC000H--FDFFFH<br/>
-  2.需要两片该SRAM芯片。0011 00?X XXXX XXXX XXXX 其中X表示A0到A12，A13是"?"表示片选信号<br/>
+    2.需要两片该SRAM芯片。0011 00?X XXXX XXXX XXXX 其中X表示A0到A12，A13是"?"表示片选信号<br/>
     <img src="./img/7.16 2.JPG" alt="7.16 2" >
 
 ### 习题7.21
@@ -133,3 +135,114 @@ B-4=7<br/>
 (2)设命中率为x。32.7ns = (1-x)*300ns +30ns，解得x=99.1%<br/>
 (3)88888H = 1000 1000 1000 1000 1000B ->高10位为222H在cache中是第"1"块，故cache地址为100 1000 1000=488H；56789H=0101 0110 0111 1000 1001B->高10位为0001 0101 1001->159H，在cache中是第"2"块，故cache地址为1011 1000 1001->B89H<br/>
 ~(累了写不动了洗洗睡)~
+
+## 第八章 （By Napleon)
+
+### 习题8.3
+
+$\frac{8\times8}{5}\times66=844.8Mbps$
+
+### 习题8.7
+
+1. PCI总线的特点和分类：
+
+![PCI](img/PCI.jpg)
+
+2. 即插即用的概念
+
+**指的是外设接入后，无需人工配置，可自动完成配置部署**。
+
+### 习题8.18
+
+| 记录类型 | 自同步能力    |
+| -------- | ------------- |
+| NRZ1     | $\frac{1}{2}$ |
+| FM       | $\frac{1}{2}$ |
+| PM       | $\frac{1}{2}$ |
+
+### 习题8.22
+
+1. 非格式化容量=$29.96MB$
+2. 格式化容量=$25MB$
+
+3. 数据传输率=$1150KB/s$
+4. 存于同一盘面的其他编号的磁道上面
+
+### 习题8.27
+
+| 编址方式 | 优点          | 缺点        |
+| -------- | ------------- | ----------- |
+| 统一编制 | 编程简单      | 占用CPU内存 |
+| 独立编址 | 不占用CPU内存 | 编程困难    |
+
+### 习题8.30
+
+1. 不同优先级中断源同时提出中断请求应先响应优先级最高的
+2. 正在进行中断服务时，有更高优先级的中断请求怎么处理
+
+### 习题8.31
+
+部分寄存器影响中断前现场的恢复，必须保护这些寄存器的数据以保证程序的正确性与可重入性。
+
+### 习题8.33(1)
+
+![](img/8253.jpg)
+
+~~~~assembly
+INIT53: MOV DX,0D0D3H; 计数器0控制字
+MOV AX,00110110B
+OUT DX,AL
+MOV DX,0D0D0h; 计数器0初始化
+MOV AX, 20000; 
+OUT DX, AL
+MOV AL, AH
+OUT DX, AL
+MOV DX, 0D0D3H
+MOV AL, 01110100B; 计数器1控制字
+OUT DX, AL
+MOV DX, 0D0D1H
+MOV AX, 100
+OUT DX, AL
+MOV AL, AH
+OUT DX, AL
+MOV DX, 0D0D3H
+MOV AL, 10110100
+OUT DX, AL
+MOV DX, 0D0D2H
+MOV AX, 10
+OUT DX, AL
+MOV AL, AH
+OUT DX, AL
+~~~~
+
+### 习题8.34(2)
+
+![](img/8255.jpg)
+
+~~~assembly
+;初始化程序
+INI155: MOV DX, 0FFE3H
+	MOV AL, 10011010B
+	OUT DX, AL
+	MOV DX, FFE2H
+	MOV AL, 00H
+	OUT DX, AL; START=0
+;A/D变换程序
+ADCOV: MOV DX, SEG DATA
+	MOV DS, DX
+	LEA SI, DATA
+	MOV DX, FEE2H
+	MOV AL, 01H
+	OUT DX, AL;	START=1
+	CALL WT1US ; 延时1us
+	MOV AL, 00H
+	OUT DX, AL
+WAIT: IN AL, DX
+	AND AL, 80H
+	JZ WAIT; 查询SEND，直到为变高
+	MOV DX, FFE0H
+	IN AL, DX; 采集A/D变换结果
+	MOV [SI], AL
+	RET
+~~~
+
