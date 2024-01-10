@@ -118,8 +118,8 @@ B-4=7<br/>
 
 ### 习题7.16
 1. 1111 110X XXXX XXXX XXXX，其中X表示A0到A12，故占用内存地址为FC000H--FDFFFH<br/>
-2.需要两片该SRAM芯片。0011 00?X XXXX XXXX XXXX 其中X表示A0到A12，A13是"?"表示片选信号<br/>
-  <img src="./img/7.16 2.JPG" alt="7.16 2" >
+  2.需要两片该SRAM芯片。0011 00?X XXXX XXXX XXXX 其中X表示A0到A12，A13是"?"表示片选信号<br/>
+    <img src="./img/7.16 2.JPG" alt="7.16 2" >
 
 ### 习题7.21
 设命中率为x。17.5ns = (1-x)*100ns +10ns，解得x=92.5% 选D
