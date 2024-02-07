@@ -9,7 +9,8 @@ Specialized for XDU SE students.
 
 如果发现有关科目内容错误或想对此项目内容贡献自己的一份力量，可直接提pull request，也欢迎通过levick-cheng@foxmail.com与我联系（主题备注HSIXDU）。
 
-感谢其他为此项目做出贡献的同学：[@luy-0](https://github.com/luy-0) [@Glonee](https://github.com/Glonee) [@ZCWzy](https://github.com/ZCWzy) 赵一晨 [@ALEX-YRDM](https://github.com/ALEX-YRDM)，[@napleon-liu]([napleon-liu (leo) (github.com)](https://github.com/napleon-liu))
+
+感谢其他为此项目做出贡献的同学：[@luy-0](https://github.com/luy-0) [@Glonee](https://github.com/Glonee) [@ZCWzy](https://github.com/ZCWzy) @赵一晨 [@ALEX-YRDM](https://github.com/ALEX-YRDM) [@BenderBlog](https://github.com/BenderBlog) [@Guchen1](https://github.com/Guchen1)
 
 
 
@@ -42,7 +43,11 @@ Specialized for XDU SE students.
 
 部分资料含有相关习题答案，仅供参考，若习题与成绩直接相关，请联系我予以删除。
 
-本仓库内资料主要是提供一些习题与考试总结，为同学们考试提供一个复习的方向。**但是我们需要学习的知识是一片海洋，考试所考的内容只是海洋里面的一瓢水。**希望学弟学妹们可以正确看待考试与日常学习，不要为了考试而考试，参加课程的主要目的是为了学到知识。
+本仓库内资料主要是提供一些习题与考试总结，为同学们考试提供一个复习的方向。
+
+**考试内容只是海洋里面的一瓢水,我们需要学习的知识是一片海洋。**
+
+莫因细瓢弱水，失三千汪洋。正待考试与日常学习。
 
 ## 附：西安电子科技大学本科生考试纪律与学术规范条例
 
