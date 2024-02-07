@@ -9,21 +9,28 @@ Specialized for XDU SE students.
 
 如果发现有关科目内容错误或想对此项目内容贡献自己的一份力量，可直接提pull request，也欢迎通过levick-cheng@foxmail.com与我联系（主题备注HSIXDU）。
 
+
 感谢其他为此项目做出贡献的同学：[@luy-0](https://github.com/luy-0) [@Glonee](https://github.com/Glonee) [@ZCWzy](https://github.com/ZCWzy) @赵一晨 [@ALEX-YRDM](https://github.com/ALEX-YRDM) [@BenderBlog](https://github.com/BenderBlog) [@Guchen1](https://github.com/Guchen1)
+
 
 
 ## 目前包含
 
+> - 大二上
+>   - 数据结构
+>   - 数电
+>   - 电路与模电
+>
 > - 大二下
 >   - 计组I
 >   - OS（操作系统）
 >   - OOP（面向对象程序设计）
 >   - 软工概论
->   - 数电
 > - 大三上
 >   - 计组II
 >   - database（数据库系统概念）
 >   - networking(计算机网络)
+>   - 编译原理
 > - 大三下
 >   - machine_learning 机器学习与数据挖掘
 >   - SPM(Software Process Management) 软件项目管理
